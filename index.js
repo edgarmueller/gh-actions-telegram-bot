@@ -1,7 +1,7 @@
 require('dotenv').config()
 const fetch = require('node-fetch')
 const telegram = require('node-telegram-bot-api')
-const bot = new telegram(process.env.TELEGRAM_TOKEN)
+const bot = new telegram(process.env.TELEGRAM_API_TOKEN)
 
 const weatherToken = process.env.WEATHER_API_TOKEN
 const weatherApiUrl = new URL("https://api.openweathermap.org/data/2.5/weather")
